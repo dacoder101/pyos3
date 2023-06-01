@@ -174,4 +174,4 @@ poetry.lock
 pyproject.toml
 
 # Auto-generated folders
-src/store
+src/store/
