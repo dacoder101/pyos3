@@ -167,3 +167,8 @@ cython_debug/
 **/*.nix
 pylint.txt
 *.config
+
+# Added by me
+
+poetry.lock
+pyproject.toml
