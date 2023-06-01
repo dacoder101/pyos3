@@ -172,3 +172,6 @@ pylint.txt
 
 poetry.lock
 pyproject.toml
+
+# Auto-generated folders
+src/store
