@@ -1,8 +1,7 @@
 from os import system
 
 
-def key(msg="Press Any Key..."):
-    print(f"{msg}\n")
+def key():
     system("/bin/bash -c 'read -s -n 1 -p \"Press Any Key...\"'")
 
 
