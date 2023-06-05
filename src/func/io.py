@@ -1,8 +1,8 @@
 from os import system
 
 
-def key():
-    system("/bin/bash -c 'read -s -n 1 -p \"Press Any Key...\"'")
+def key(msg="Press Any Key..."):
+    system(f"/bin/bash -c 'read -s -n 1 -p \"{msg}\"'")
 
 
 def cls():
