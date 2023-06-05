@@ -1,4 +1,19 @@
 from os import system
+import termios
+import tty
+import sys
+
+
+def get_key():
+    fd = sys.stdin.fileno()
+    settings = termios.tcgetattr(fd)
+    try:
+        tty.setraw(sys.stdin.fileno())
+        key = sys.stdin.read(1)
+
+    finally:
+        termios.tcsetattr(fd, termios.TCSADRAIN, settings)
+    return key
 
 
 def key(msg="Press Any Key..."):
