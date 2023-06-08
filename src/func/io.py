@@ -22,3 +22,13 @@ def key(msg="Press Any Key..."):
 
 def cls():
     print("\033c", end="", flush=True)
+
+
+def tprint(str):
+    TITLE = """
+█▀▀█ █──█ █▀▀█ █▀▀ █▀▀█ 
+█──█ █▄▄█ █──█ ▀▀█ ──▀▄ 
+█▀▀▀ ▄▄▄█ ▀▀▀▀ ▀▀▀ █▄▄█
+
+"""
+    print(TITLE + str)

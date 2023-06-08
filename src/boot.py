@@ -9,8 +9,9 @@ BLANKS_PATH = "store/blanks/"
 def install():
     if not path_exists(BLANKS_PATH):
         create_dir(BLANKS_PATH)
+    if not path_exists(BLANKS_PATH + "installed"):
         create_file(BLANKS_PATH + "install")
         file_exec("install.py")
 
-
-install()
+if __name__ == "__main__":
+    install()
