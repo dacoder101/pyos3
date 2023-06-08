@@ -13,5 +13,6 @@ def install():
         create_file(BLANKS_PATH + "install")
         file_exec("install.py")
 
+
 if __name__ == "__main__":
     install()
