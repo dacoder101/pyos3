@@ -17,6 +17,7 @@ def install():
 
 
 def main():
+    cls()
     install()
 
 

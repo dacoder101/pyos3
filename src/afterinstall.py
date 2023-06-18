@@ -33,6 +33,7 @@ def system_type():
 
 
 def main():
+    cls()
     tprint("Welcome to pyos3.\nLet's configure your pyos3 setup to fit your needs.")
     key()
     system_type()

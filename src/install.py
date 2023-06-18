@@ -1,7 +1,5 @@
 from func.io import tprint, key, cls
 from func.file import create_file
-from func.path import path_exists
-from func.util import bad_script
 from func import requests
 
 INTERNET_URL = "https://github.com/"
@@ -21,6 +19,7 @@ def install():
 
 
 def main():
+    cls()
     if not requests.check_internet(INTERNET_URL):
         tprint(
             f"Your internet was not able to connect with the test URL {INTERNET_URL}.\nThe process can not continue without an internet connection."
