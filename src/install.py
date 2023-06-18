@@ -1,8 +1,13 @@
 from func.io import tprint, key, cls
+from func.file import create_file
+from func.path import path_exists
+from func.util import bad_script
 from func import requests
 
 INTERNET_URL = "https://github.com/"
 RAW_URL = "https://raw.githubusercontent.com/dacoder101/pyos3/main/"
+
+BLANKS_PATH = "store/blanks/"
 
 
 def install():
@@ -10,6 +15,9 @@ def install():
         f"{RAW_URL}src/afterinstall.py",
         "afterinstall.py",
     )
+    create_file(BLANKS_PATH + "afterinstall")
+    tprint("Installation has been completed.")
+    key()
 
 
 def main():
