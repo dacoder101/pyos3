@@ -17,6 +17,14 @@ def get_key():
     return key
 
 
+def list_input(inputs):
+    output = "\n"
+    for k, v in inputs.items():
+        output += f"[{k}]: {v}\n"
+    print(output)
+    return get_key()
+
+
 def key(msg="Press Any Key..."):
     system(f"/bin/bash -c 'read -s -n 1 -p \"{msg}\"'")
 
