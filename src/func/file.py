@@ -3,6 +3,11 @@ def write_file(path, content):
         file.write(content)
 
 
+def write_bin(path, content):
+    with open(path, "wb") as file:
+        file.write(content)
+
+
 def read_file(path):
     with open(path, "r") as file:
         return file.read()

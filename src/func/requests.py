@@ -16,6 +16,6 @@ def check_internet(url, attempts=3):
 def download(url, path):
     try:
         file.create_file(path)
-        file.write_file(path, requests.get(url))
+        file.write_bin(path, requests.get(url).content)
     except RequestException:
         raise f"Failed to download from {url}"
