@@ -1,6 +1,7 @@
 from func.path import path_exists
 from func.util import file_exec
 from func.dir import create_dir
+from func.io import cls
 
 BLANKS_PATH = "store/blanks/"
 
